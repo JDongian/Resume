@@ -1,4 +1,7 @@
 \documentclass[line,margin]{res}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
     \usepackage[usenames,dvipsnames]{xcolor}
     \usepackage[colorlinks=true,linkcolor=blue,urlcolor=NavyBlue,citecolor=Fuchsia]{hyperref}
 
@@ -6,9 +9,12 @@
     \setlength{\headsep}{24pt}  % space between header and text
     \topmargin=-0.5in % start text higher on the page
 
-\begin{document}
-\thispagestyle{empty} % this page has no header  
+    \cfoot {}
+    \rfoot{\scriptsize{Resume v18, viewable online at
+        \href{https://github.com/JDongian/Resume/blob/master/Resume18.pdf}
+        {github.com/JDongian/Resume/blob/master/Resume18.pdf}}}
 
+\begin{document}
     \name{Joshua Dong}
     % \address used twice to have two lines of address
     \address{10336 Kilmarnock Drive, Austin, TX 78726}
@@ -22,7 +28,7 @@
 \vspace{22pt}
     \begin{itemize} \itemsep -2pt % reduce space between items
     \item Looking to learn something new in a challenging 2016 summer internship
-    \item Experience in testing, automation, AI, web technologies, and project leadership \href{https://www.github.com/JDong820}{\texttt{github.com/JDong820}}
+    \item Experience in testing, automation, AI, web technologies, and project leadership 
     \item Planning to study distributed systems in a doctorate program
     \end{itemize}
 
@@ -125,7 +131,7 @@ RTS AI Development
     \item Fluent in English and Chinese, elementary proficiency with Korean
     \item Martial arts practitioner for over ten years, member of UT Wushu team
     \item Founded high school hip hop dance club and still enjoys break dancing
-    \item Ask me about my other projects!
+    \item Ask me about my other projects! \href{https://www.github.com/JDongian}{\texttt{github.com/JDongian}}
     \end{itemize}
 
 \end{resume} 
